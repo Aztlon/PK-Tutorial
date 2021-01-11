@@ -34,8 +34,8 @@ Also see:
 * [Hiro3's addons](https://github.com/EmreNtm/ProjectKorra-Addon-Abilities)
 * Moros's side plugin [Hyperion](https://github.com/PrimordialMoros/Hyperion)
 * Simplicitee's side plugin [ProjectAddons](https://github.com/Simplicitee/ProjectAddons)
-* [JedCore](https://github.com/Aztlon/JedCore)
+* jedk1's side plugin [JedCore](https://github.com/Aztlon/JedCore)
 
 ## Additional help
 If you have a question that isn't answered anywhere in the repository, you can ask the question in [ProjectKorra's Discord](https://discord.gg/pPJe5p3) in the #development-support channel.
-If you have a question specifically for me, or you have no one else to turn to, you can ask DM me on Discord: Aztl#0001.
+If you have a question specifically for me, or you have no one else to turn to, you can DM me on Discord: Aztl#0001.
