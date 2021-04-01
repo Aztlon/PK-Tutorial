@@ -118,8 +118,16 @@ public class AirJump extends AirAbility implements AddonAbility, ComboAbility {
 		 * quick attacks, etc.) usually add the cooldown at the start.
 		 * Alternatively, we could add the cooldown when the ability removes
 		 * by making our own remove() method. See below.
+		 *
+		 * Most addon developers don't know this, but
+		 * any change the player can detect that occurs in the constructor
+		 * should be within a (!isRemoved()) if block. This is because
+		 * start() calls the AbilityStartEvent and if it's cancelled,
+		 * it would still add the cooldown because it's in the same code block.
+		 * We want it to add the cooldown only if it's not cancelled.
 		 */
-		bPlayer.addCooldown(this);
+		if (!isRemoved())
+			bPlayer.addCooldown(this);
 	}
 
 	/**
