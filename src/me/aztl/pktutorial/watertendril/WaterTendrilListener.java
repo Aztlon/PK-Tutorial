@@ -38,7 +38,7 @@ public class WaterTendrilListener implements Listener {
 	public void onLeftClick(PlayerInteractEvent event) {
 		if (event.getHand() != EquipmentSlot.HAND
 				|| (event.getAction() != Action.LEFT_CLICK_AIR 
-					|| event.getAction() != Action.LEFT_CLICK_BLOCK))
+					&& event.getAction() != Action.LEFT_CLICK_BLOCK))
 			return;
 		
 		Player player = event.getPlayer();
